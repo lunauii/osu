@@ -109,6 +109,7 @@ namespace osu.Game.Rulesets.Osu.Edit
                         GridToolbox = OsuGridToolboxGroup,
                     },
                     new GenerateToolboxGroup(),
+                    new ComboToolboxGroup(),
                     FreehandSliderToolboxGroup
                 }
             );
