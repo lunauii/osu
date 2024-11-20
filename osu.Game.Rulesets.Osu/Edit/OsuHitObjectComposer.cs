@@ -101,6 +101,7 @@ namespace osu.Game.Rulesets.Osu.Edit
 
             RightToolbox.AddRange(new Drawable[]
                 {
+                    new ComboToolboxGroup(),
                     OsuGridToolboxGroup,
                     new TransformToolboxGroup
                     {
@@ -109,7 +110,6 @@ namespace osu.Game.Rulesets.Osu.Edit
                         GridToolbox = OsuGridToolboxGroup,
                     },
                     new GenerateToolboxGroup(),
-                    new ComboToolboxGroup(),
                     FreehandSliderToolboxGroup
                 }
             );
