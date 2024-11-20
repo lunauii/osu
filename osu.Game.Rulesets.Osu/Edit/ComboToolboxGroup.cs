@@ -12,7 +12,7 @@ namespace osu.Game.Rulesets.Osu.Edit
 {
     public partial class ComboToolboxGroup : EditorToolboxGroup
     {
-        private readonly EditorToolButton polygonButton;
+        private readonly EditorToolButton comboColourButton;
 
         public ComboToolboxGroup()
             : base("Combo")
@@ -24,7 +24,7 @@ namespace osu.Game.Rulesets.Osu.Edit
                 Spacing = new Vector2(5),
                 Children = new Drawable[]
                 {
-                    polygonButton = new EditorToolButton("Colour",
+                    comboColourButton = new EditorToolButton("Colour",
                         () => new SpriteIcon { Icon = FontAwesome.Solid.Palette },
                         () => new ComboColourPopover()),
                 }
