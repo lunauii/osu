@@ -5,6 +5,7 @@ using osu.Framework.Graphics;
 using osu.Framework.Graphics.Containers;
 using osu.Framework.Graphics.Sprites;
 using osu.Game.Rulesets.Edit;
+using osu.Game.Screens.Edit;
 using osu.Game.Screens.Edit.Components;
 using osuTK;
 
@@ -14,7 +15,7 @@ namespace osu.Game.Rulesets.Osu.Edit
     {
         private readonly EditorToolButton comboColourButton;
 
-        public ComboToolboxGroup()
+        public ComboToolboxGroup(EditorBeatmap editorBeatmap)
             : base("Combo")
         {
             Child = new FillFlowContainer
@@ -26,7 +27,7 @@ namespace osu.Game.Rulesets.Osu.Edit
                 {
                     comboColourButton = new EditorToolButton("Colour",
                         () => new SpriteIcon { Icon = FontAwesome.Solid.Palette },
-                        () => new ComboColourPopover()),
+                        () => new ComboColourPopover(editorBeatmap)),
                 }
             };
         }

@@ -101,7 +101,7 @@ namespace osu.Game.Rulesets.Osu.Edit
 
             RightToolbox.AddRange(new Drawable[]
                 {
-                    new ComboToolboxGroup(),
+                    new ComboToolboxGroup(EditorBeatmap),
                     OsuGridToolboxGroup,
                     new TransformToolboxGroup
                     {
